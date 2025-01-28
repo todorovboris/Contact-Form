@@ -4,22 +4,22 @@ This is a pretty simple Back-End app, which allows to the customers to fill a co
 
 # Main functionalities
 
-## Page with contact form
+### Page with contact form
 
 -   fields for name, email and message
 -   validation of the filled data
 
-## Storing messages in a database
+### Storing messages in a database
 
 -   Using MongoDB to store data (name, email, message, date).
 
-## Admin page
+### Admin page
 
 -   View all messages (with names, emails, content and date).
 
-## Notifications
+### Notifications
 
--   Optional: send an automatic confirmation email or notification to the administrator.
+-   Send an automatic confirmation email or notification to the administrator.
 
 # Technologies used in this project
 
