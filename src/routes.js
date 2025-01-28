@@ -1,4 +1,6 @@
 import { Router } from 'express';
+import adminController from './controllers/admin-controller.js';
+import formController from './controllers/form-controller.js';
 
 const routes = Router();
 
@@ -6,12 +8,7 @@ routes.get('/', (req, res) => {
     res.render('home');
 });
 
-routes.get('/form', (req, res) => {
-    res.render('form');
-});
-
-routes.get('/admin', (req, res) => {
-    res.render('admin');
-});
+routes.use(adminController);
+routes.use(formController);
 
 export default routes;
