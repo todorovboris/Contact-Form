@@ -1,0 +1,57 @@
+/* Admin Page Specific Styles */
+
+/* Message List Container */
+.message-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Разстояние между съобщенията */
+}
+
+/* Single Message Item */
+.message-item {
+    background: #ffffff; /* Бял фон */
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Нежна сянка */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Message Hover Effect */
+.message-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Message Title */
+.message-item h3 {
+    font-size: 1.2rem;
+    color: #374151; /* Тъмносив текст */
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Message Details */
+.message-item p {
+    font-size: 1rem;
+    color: #4b5563; /* Умерено сив текст */
+    margin-bottom: 1rem;
+}
+
+/* Delete Button */
+.btn-delete {
+    background: #f87171; /* Червен бутон */
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Лека сянка */
+}
+
+.btn-delete:hover {
+    background: #ef4444; /* По-тъмен червен цвят при задържане */
+    transform: translateY(-2px);
+}
