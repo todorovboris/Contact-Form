@@ -1,0 +1,30 @@
+{
+    "name": "contact-form",
+    "version": "1.0.0",
+    "description": "This is a pretty simple Back-End app, which allows to the customers to fill a contact form and save the messages in the database.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/todorovboris/Contact-Form.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/todorovboris/Contact-Form/issues"
+    },
+    "homepage": "https://github.com/todorovboris/Contact-Form#readme",
+    "dependencies": {
+        "express": "^4.21.2",
+        "express-handlebars": "^8.0.1",
+        "mongoose": "^8.9.5"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    }
+}
