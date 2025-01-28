@@ -3,9 +3,9 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    background: #ffffff; /* Бял фон */
+    background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Нежна сянка */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form .form-group {
@@ -16,7 +16,7 @@
 .contact-form label {
     display: block;
     font-size: 1rem;
-    color: #4b5563; /* Тъмносив текст */
+    color: #4b5563;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
@@ -26,29 +26,29 @@
     width: 100%;
     padding: 0.8rem;
     font-size: 1rem;
-    border: 1px solid #d1d5db; /* Лека сива рамка */
+    border: 1px solid #d1d5db;
     border-radius: 10px;
-    background: #f9fafb; /* Светлосив фон */
-    color: #374151; /* Текст в полетата */
+    background: #f9fafb;
+    color: #374151;
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #60a5fa; /* Светлосин акцент при фокус */
-    box-shadow: 0 0 5px rgba(96, 165, 250, 0.5); /* Светлосиня сянка при фокус */
+    border-color: #60a5fa;
+    box-shadow: 0 0 5px rgba(96, 165, 250, 0.5);
 }
 
 .contact-form textarea {
-    resize: none; /* Забрана за промяна на размера */
+    resize: none;
 }
 
 .contact-form button {
     display: block;
     width: 100%;
     padding: 0.8rem 2rem;
-    background: #60a5fa; /* Светлосин бутон */
+    background: #60a5fa;
     color: #fff;
     font-size: 1.1rem;
     font-weight: bold;
@@ -57,10 +57,10 @@
     border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Лека сянка */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button:hover {
-    background: #3b82f6; /* По-тъмен син цвят при задържане */
+    background: #3b82f6;
     transform: translateY(-2px);
 }
