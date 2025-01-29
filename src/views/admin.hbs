@@ -1,7 +1,7 @@
 <div class='container'>
     {{#if isAuthenticated}}
         <!-- Header Section -->
-        <form action='POST'>
+        <form action='/admin-logout' method='POST'>
             <div class='header'>
                 <h1>Admin Panel</h1>
                 <button type='submit' class='logout-btn'>Logout</button>
@@ -15,16 +15,17 @@
 
             <!-- Message List -->
             {{#each contacts}}
-                <form action='POST'></form>
-                <div class='message-list'>
-                    <div class='message-item'>
-                        <h3>{{name}}</h3>
-                        <p><strong>Email:</strong> {{email}}</p>
-                        <p><strong>Message:</strong> "{{message}}"</p>
-                        <p><strong>Sent on:</strong> {{date}}</p>
-                        <button class='btn btn-delete'>Delete</button>
+                <form action='/admin-delete' method='POST'>
+                    <div class='message-list'>
+                        <div class='message-item'>
+                            <h3>{{name}}</h3>
+                            <p><strong>Email:</strong> {{email}}</p>
+                            <p><strong>Message:</strong> "{{message}}"</p>
+                            <p><strong>Sent on:</strong> {{date}}</p>
+                            <button class='btn btn-delete'>Delete</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             {{/each}}
         </section>
     {{else}}

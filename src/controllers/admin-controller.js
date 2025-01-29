@@ -25,4 +25,9 @@ adminController.get('/admin', async (req, res) => {
     res.render('admin', { contacts, isAuthenticated });
 });
 
+adminController.post('/admin-logout', async (req, res) => {
+    isAuthenticated = false;
+    res.redirect('/admin');
+});
+
 export default adminController;
