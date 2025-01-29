@@ -5,7 +5,7 @@ export default {
         let contacts = Contact.find({});
         return contacts;
     },
-    async getOneContact(contactId) {
+    async deleteContact(contactId) {
         await Contact.findByIdAndDelete({ _id: contactId });
     },
     async createContact(contactData) {

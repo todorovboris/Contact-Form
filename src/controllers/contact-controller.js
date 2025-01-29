@@ -17,7 +17,7 @@ contactController.post('/form', async (req, res) => {
 contactController.get('/form/:formId/delete', async (req, res) => {
     const contactId = req.params.formId;
     try {
-        await contactHandler.getOneContact(contactId);
+        await contactHandler.deleteContact(contactId);
     } catch (err) {
         console.log(err.message);
     }
