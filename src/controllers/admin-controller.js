@@ -8,6 +8,12 @@ const adminEmail = process.env.ADMIN_EMAIL;
 const adminPass = process.env.ADMIN_PASSWORD;
 let isAuthenticated = false;
 
+adminController.get('/admin', async (req, res) => {
+    let contacts = await contactHandler.getAllContacts();
+
+    res.render('admin', { contacts, isAuthenticated });
+});
+
 adminController.post('/admin', async (req, res) => {
     const admin = req.body;
 
@@ -17,12 +23,6 @@ adminController.post('/admin', async (req, res) => {
     } else {
         return res.render('admin', { error: 'Invalid email or password!' });
     }
-});
-
-adminController.get('/admin', async (req, res) => {
-    let contacts = await contactHandler.getAllContacts();
-
-    res.render('admin', { contacts, isAuthenticated });
 });
 
 adminController.post('/admin-logout', async (req, res) => {
