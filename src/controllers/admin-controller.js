@@ -14,7 +14,7 @@ adminController.get('/admin', async (req, res) => {
     res.render('admin', { contacts, isAuthenticated });
 });
 
-adminController.post('/admin', async (req, res) => {
+adminController.post('/admin', (req, res) => {
     const admin = req.body;
 
     if (admin.email === adminEmail && admin.password === adminPass) {
