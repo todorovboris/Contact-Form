@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import adminController from './controllers/admin-controller.js';
-import formController from './controllers/form-controller.js';
+import contactController from './controllers/contact-controller.js';
 
 const routes = Router();
 
@@ -9,6 +9,6 @@ routes.get('/', (req, res) => {
 });
 
 routes.use(adminController);
-routes.use(formController);
+routes.use(contactController);
 
 export default routes;
