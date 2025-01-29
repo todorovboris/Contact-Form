@@ -10,7 +10,7 @@
 
 /* Single Message Item */
 .message-item {
-    background: #ffffff; /* Бял фон */
+    background: #ffffff;
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Нежна сянка */
@@ -26,7 +26,7 @@
 /* Message Title */
 .message-item h3 {
     font-size: 1.2rem;
-    color: #374151; /* Тъмносив текст */
+    color: #374151;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
