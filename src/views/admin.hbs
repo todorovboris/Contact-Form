@@ -24,6 +24,10 @@
                         <a href='/form/{{id}}/delete' class='btn btn-delete'>Delete</a>
                     </div>
                 </div>
+            {{else}}
+                <div class='no-posts'>
+                    <p class='no-offer'>There are no new messages...</p>
+                </div>
             {{/each}}
         </section>
 
