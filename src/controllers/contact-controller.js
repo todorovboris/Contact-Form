@@ -14,4 +14,15 @@ contactController.post('/form', async (req, res) => {
     res.redirect('/');
 });
 
+contactController.get('/form/:formId/delete', async (req, res) => {
+    const contactId = req.params.formId;
+    try {
+        await contactHandler.getOneContact(contactId);
+    } catch (err) {
+        console.log(err.message);
+    }
+
+    res.redirect('/admin');
+});
+
 export default contactController;
