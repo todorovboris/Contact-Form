@@ -4,7 +4,8 @@
         <h1>Admin Panel</h1>
     </div>
 
-    <!-- Messages Section -->
+    <!-- Messages Section (only visible if authenticated) -->
+    {{#if isAuthenticated}}
     <section class='section'>
         <h2>Messages</h2>
         <p>Here are the latest messages submitted through the contact form:</p>
@@ -22,5 +23,23 @@
         {{/each}}
         </div>
     </section>
+    {{else}}
+    <!-- Admin Login Section -->
+    <section class='section'>
+        <h2>Admin Login</h2>
+        <form method="POST" class="admin-login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        {{#if error}}
+            <p class="error">{{error}}</p>
+        {{/if}}
+    </section>
+    {{/if}}
 </div>
