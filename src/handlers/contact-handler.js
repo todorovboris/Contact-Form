@@ -2,7 +2,7 @@ import Contact from '../Models/Contacts.js';
 
 export default {
     getAllContacts() {
-        let contacts = Contact.find({});
+        let contacts = Contact.find({}).sort({ date: -1 });
         return contacts;
     },
     async deleteContact(contactId) {
