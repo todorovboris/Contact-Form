@@ -30,7 +30,7 @@ This is a pretty simple Back-End app, which allows to the customers to fill a co
 
 ### Instalation and running
 
-- Instalation requires installed nodejs
+- Installation requires installed nodejs
 - Download the project locally
 - From the terminal navigate to the folder of the project, install the packages and start the project:
 
