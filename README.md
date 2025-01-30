@@ -27,3 +27,16 @@ This is a pretty simple Back-End app, which allows to the customers to fill a co
 -   Handlebars: For page visualization (form and admin panel).
 -   MongoDB: For message storage.
 -   Mongoose: For data modeling.
+
+### Instalation and running
+
+- Instalation requires installed nodejs
+- Download the project locally
+- From the terminal navigate to the folder of the project, install the packages and start the project:
+
+1) npm install
+2) npm start
+
+- open in the browser the following link: http://localhost:5001
+
+  
