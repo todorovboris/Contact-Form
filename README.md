@@ -28,7 +28,7 @@ This is a pretty simple Back-End app, which allows to the customers to fill a co
 -   MongoDB: For message storage.
 -   Mongoose: For data modeling.
 
-### Instalation and running
+# Instalation and running
 
 - Installation requires installed nodejs
 - Download the project locally
