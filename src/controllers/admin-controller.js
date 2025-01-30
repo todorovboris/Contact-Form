@@ -9,7 +9,7 @@ const adminPass = process.env.ADMIN_PASSWORD;
 let isAuthenticated = false;
 
 adminController.get('/admin', async (req, res) => {
-    let contacts = await contactHandler.getAllContacts();
+    let contacts = await contactHandler.getAllMessages();
 
     res.render('admin', { contacts, isAuthenticated });
 });

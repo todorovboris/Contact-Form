@@ -7,6 +7,6 @@ const contactSchema = new Schema({
     date: { type: Date, default: Date.now },
 });
 
-const Contact = model('Contact', contactSchema);
+const Message = model('Message', contactSchema);
 
-export default Contact;
+export default Message;

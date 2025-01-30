@@ -1,15 +1,15 @@
-import Contact from '../Models/Contacts.js';
+import Message from '../Models/Messages.js';
 
 export default {
-    getAllContacts() {
-        let contacts = Contact.find({}).sort({ date: -1 });
+    getAllMessages() {
+        let contacts = Message.find({}).sort({ date: -1 });
         return contacts;
     },
-    async deleteContact(contactId) {
-        await Contact.findByIdAndDelete({ _id: contactId });
+    async deleteMessage(contactId) {
+        await Message.findByIdAndDelete({ _id: contactId });
     },
-    async createContact(contactData) {
-        const newContact = Contact.create({
+    async createMessage(contactData) {
+        const newContact = Message.create({
             ...contactData,
         });
 
