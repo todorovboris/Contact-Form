@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import contactHandler from '../handlers/contact-handler.js';
+import messageHandler from '../handlers/message-handler.js';
 import 'dotenv/config';
 
 const adminController = Router();
@@ -9,7 +9,7 @@ const adminPass = process.env.ADMIN_PASSWORD;
 let isAuthenticated = false;
 
 adminController.get('/admin', async (req, res) => {
-    let contacts = await contactHandler.getAllMessages();
+    let contacts = await messageHandler.getAllMessages();
 
     res.render('admin', { contacts, isAuthenticated });
 });
