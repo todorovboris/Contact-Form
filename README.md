@@ -16,6 +16,7 @@ This is a pretty simple Back-End app, which allows to the customers to fill a co
 ### Admin page
 
 -   View all messages (with names, emails, content and date).
+-   For the purpose of presenting it may be used the following email: admin@abv.bg and password: 123
 
 ### Notifications
 
