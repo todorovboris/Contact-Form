@@ -19,7 +19,7 @@ This is a pretty simple Back-End app, which allows to the customers to fill a co
 
 ### Notifications
 
--   Send an automatic confirmation email or notification to the administrator.
+-   Send an automatic confirmation email or notification to the administrator(TBA). 
 
 # Technologies used in this project
 
