@@ -39,4 +39,14 @@ This is a pretty simple Back-End app, which allows to the customers to fill a co
 
 - open in the browser the following link: http://localhost:5001
 
+# Screenshots
+- Home Page
+  ![Screen Shot 2025-06-02 at 12 50 39 PM](https://github.com/user-attachments/assets/da39c0ef-a53d-480b-af12-1d035afed9d9)
+
+- Submit your message
+  ![Screen Shot 2025-06-02 at 12 48 32 PM](https://github.com/user-attachments/assets/64d4c289-fc47-4c45-8ad7-8013734eef6a)
+
+- Admin Page
+  ![Screen Shot 2025-06-02 at 12 54 46 PM](https://github.com/user-attachments/assets/8231a4dd-2df6-40c6-8762-3d5e5f480f45)
+
   
